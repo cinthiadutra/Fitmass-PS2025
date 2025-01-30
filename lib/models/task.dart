@@ -13,7 +13,6 @@ class Task {
   /// Se [id] não for fornecido, um ID aleatório maior que 10 será gerado.
   ///
   /// [name] é obrigatório e representa o nome da tarefa.
-  /// [completed] indica se a tarefa está concluída ou não.
   Task({
     int? id,
     required this.name,
@@ -31,7 +30,6 @@ class Task {
   /// O objeto JSON deve conter as seguintes chaves:
   /// - 'id': O identificador único da tarefa.
   /// - 'title': O nome da tarefa.
-  /// - 'completed': O status de conclusão da tarefa (opcional).
   ///
   /// Retorna uma instância de [Task].
   factory Task.fromJson(Map<String, dynamic> json) {
@@ -46,7 +44,6 @@ class Task {
   /// O objeto JSON resultante conterá as seguintes chaves:
   /// - 'id': O identificador único da tarefa.
   /// - 'title': O nome da tarefa.
-  /// - 'completed': O status de conclusão da tarefa.
   ///
   /// Retorna uma representação JSON da instância de [Task].
   Map<String, dynamic> toJson() {
