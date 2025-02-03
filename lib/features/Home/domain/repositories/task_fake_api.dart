@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:http/http.dart' as http;
-import '../models/task.dart';
+import '../../../../models/task.dart';
 
 class TaskRepository {
   final String baseUrl = "https://jsonplaceholder.typicode.com/todos";
